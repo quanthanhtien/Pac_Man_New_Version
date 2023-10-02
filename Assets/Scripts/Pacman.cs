@@ -1,12 +1,16 @@
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent(typeof(Movement))]
 public class Pacman : MonoBehaviour
 {
+    public Ghost Ghost { get; private set; }
     public AnimatedSprite deathSequence;
+    // public AnimatedSprite Skill_1;
     public SpriteRenderer spriteRenderer { get; private set; }
     public new Collider2D collider { get; private set; }
     public Movement movement { get; private set; }
+    public AnimatedSprite Skill;
 
     private void Awake()
     {
@@ -17,6 +21,10 @@ public class Pacman : MonoBehaviour
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            StartCoroutine(ActivateSkill());
+        }
         // Set the new direction based on the current input
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
             movement.SetDirection(Vector2.up);
@@ -58,4 +66,25 @@ public class Pacman : MonoBehaviour
         deathSequence.Restart();
     }
 
+    public void Skill_1() {
+        enabled = true;
+        spriteRenderer.enabled = true;
+        Skill.GetComponent<Collider2D>().enabled = true;
+        movement.enabled = false;
+        Skill.enabled = true;
+        Skill.spriteRenderer.enabled = true;
+    }
+    public IEnumerator ActivateSkill() {
+    Skill_1(); // Gọi hàm Skill_1()
+
+    yield return new WaitForSeconds(1f); // Đợi 1 giây
+
+    // Tắt các thành phần đã được kích hoạt trong hàm Skill_1()
+    spriteRenderer.enabled = true;
+    Skill.GetComponent<Collider2D>().enabled = false;
+    movement.enabled = true;
+    Skill.enabled = false;
+    Skill.spriteRenderer.enabled = false;
+    }
+    
 }

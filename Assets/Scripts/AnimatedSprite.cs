@@ -43,4 +43,8 @@ public class AnimatedSprite : MonoBehaviour
         Advance();
     }
 
+    public void  Skill() {
+        
+    }
+
 }
