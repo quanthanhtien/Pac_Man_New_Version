@@ -31,7 +31,7 @@ public class GhostFrightened : GhostBehavior
         white.enabled = false;
     }
 
-    private void Eaten()
+    public void Eaten()
     {
         eaten = true;
         ghost.SetPosition(ghost.home.inside.position);

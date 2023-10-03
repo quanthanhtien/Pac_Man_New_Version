@@ -13,7 +13,6 @@ public class GameManager : MonoBehaviour
 
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
-    public int point_energy { get; private set; }
     public int lives { get; private set; }
 
     private void Start()
