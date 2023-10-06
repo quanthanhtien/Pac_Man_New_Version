@@ -1,0 +1,813 @@
+fileFormatVersion: 2
+guid: 073293d736766524c9da8ce526488524
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_0
+      rect:
+        serializedVersion: 2
+        x: 2116
+        y: 6
+        width: 89
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970e57e05724c4a40829a4d9e1b680d2
+      internalID: -654572850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_17
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 13
+        width: 74
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7513401c8565ac84b8bdaa4b337e8106
+      internalID: 1597547359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_18
+      rect:
+        serializedVersion: 2
+        x: 1644
+        y: 10
+        width: 75
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1649f2725b62d0649b55be98110a4022
+      internalID: 670566364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_19
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 10
+        width: 78
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4049ecdf8f2763b4dae8968dd7f907b0
+      internalID: 2011470016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_20
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 9
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94976fe9290a7aa489565e7611ed4a17
+      internalID: -1445845866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_21
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 6
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e4197475cf9db4abe83fdb804cd575
+      internalID: -773618845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_22
+      rect:
+        serializedVersion: 2
+        x: 2022
+        y: 6
+        width: 85
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1cd4d6acc17fc46ab0da2d69f7685c
+      internalID: -1054555684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_29
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 0
+        width: 92
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f6e658c04c3a04eb83d74930ce83b9
+      internalID: -1176690375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_32
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 0
+        width: 97
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 971d07fca4842f44fb066e77e4c2486c
+      internalID: -1784198878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_36
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 23
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2192bc18b157a1646a0b146dd153ecc2
+      internalID: -1808170302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_37
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 23
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00759322d0bcb3f4392b576838207979
+      internalID: -407278351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_38
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 23
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9f29d39308d09459c9c6ae1d2fff5f
+      internalID: 1679114236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_39
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 23
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5660cb2debad50478cb489ec659c1c3
+      internalID: -1050394047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_40
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 23
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c3ad2a338440c14fb75ae6e45ab9c63
+      internalID: 916513761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_41
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 23
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44158d04b1ce89489e3643e4aed5fb3
+      internalID: -732991607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_42
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 23
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5dabd71a6100847902d0cc2d172c2d
+      internalID: -2027828530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_43
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 23
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44aa0e4dd1701b74fa54185b0a23901b
+      internalID: 2089635474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_44
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 22
+        width: 52
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e001262f64a395c46a0b4328b6b057db
+      internalID: 384891125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_45
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 20
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f93f5a24b423942a1a9d4ec153bb9f
+      internalID: 1765298469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_46
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 19
+        width: 58
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6015e3c5a8b5d824eb86f59f982d290f
+      internalID: -1840709557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_47
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 18
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8062e635d7c11464e8b04806531252e2
+      internalID: -443051994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_48
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 16
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ef5141fa849f74ab4a73842944070b
+      internalID: 972823592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_49
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 15
+        width: 65
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e70167496bf3d4e93b52b8cd756d5e
+      internalID: 118270889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_50
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 14
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9256a91bbc9b960458d316b2cc135536
+      internalID: -530012373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_51
+      rect:
+        serializedVersion: 2
+        x: 1454
+        y: 14
+        width: 69
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d440141c699a5e34380e6a3b2ed2e388
+      internalID: 2042517714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_56
+      rect:
+        serializedVersion: 2
+        x: 2305
+        y: 0
+        width: 94
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b892c2ef4e61394196b3310b748b398
+      internalID: -749708919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_23
+      rect:
+        serializedVersion: 2
+        x: 2209
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7016f70e2b647544aacdbb93923f7291
+      internalID: 316299482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HolyExplosion_96x96_1
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3334a5be73a33545a285efab1d15d0c
+      internalID: 173658530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      HolyExplosion_96x96_0: -654572850
+      HolyExplosion_96x96_1: 173658530
+      HolyExplosion_96x96_10: -2099127539
+      HolyExplosion_96x96_100: -423890461
+      HolyExplosion_96x96_101: -56072578
+      HolyExplosion_96x96_11: 749003062
+      HolyExplosion_96x96_12: 591201031
+      HolyExplosion_96x96_13: 603062730
+      HolyExplosion_96x96_14: 922182701
+      HolyExplosion_96x96_15: -305774102
+      HolyExplosion_96x96_16: -1067766945
+      HolyExplosion_96x96_17: 1597547359
+      HolyExplosion_96x96_18: 670566364
+      HolyExplosion_96x96_19: 2011470016
+      HolyExplosion_96x96_2: 1493223562
+      HolyExplosion_96x96_20: -1445845866
+      HolyExplosion_96x96_21: -773618845
+      HolyExplosion_96x96_22: -1054555684
+      HolyExplosion_96x96_23: 316299482
+      HolyExplosion_96x96_24: -1517322390
+      HolyExplosion_96x96_25: 1116681691
+      HolyExplosion_96x96_26: -1491760244
+      HolyExplosion_96x96_27: -379967507
+      HolyExplosion_96x96_28: 333081500
+      HolyExplosion_96x96_29: -1176690375
+      HolyExplosion_96x96_3: 686455401
+      HolyExplosion_96x96_30: -1092002308
+      HolyExplosion_96x96_31: -464963867
+      HolyExplosion_96x96_32: -1784198878
+      HolyExplosion_96x96_33: -377933797
+      HolyExplosion_96x96_34: -2027271598
+      HolyExplosion_96x96_35: -1773858716
+      HolyExplosion_96x96_36: -1808170302
+      HolyExplosion_96x96_37: -407278351
+      HolyExplosion_96x96_38: 1679114236
+      HolyExplosion_96x96_39: -1050394047
+      HolyExplosion_96x96_4: -160307132
+      HolyExplosion_96x96_40: 916513761
+      HolyExplosion_96x96_41: -732991607
+      HolyExplosion_96x96_42: -2027828530
+      HolyExplosion_96x96_43: 2089635474
+      HolyExplosion_96x96_44: 384891125
+      HolyExplosion_96x96_45: 1765298469
+      HolyExplosion_96x96_46: -1840709557
+      HolyExplosion_96x96_47: -443051994
+      HolyExplosion_96x96_48: 972823592
+      HolyExplosion_96x96_49: 118270889
+      HolyExplosion_96x96_5: -76093239
+      HolyExplosion_96x96_50: -530012373
+      HolyExplosion_96x96_51: 2042517714
+      HolyExplosion_96x96_52: -1066578107
+      HolyExplosion_96x96_53: -1438187636
+      HolyExplosion_96x96_54: 605659944
+      HolyExplosion_96x96_55: 595447977
+      HolyExplosion_96x96_56: -749708919
+      HolyExplosion_96x96_57: -1261668579
+      HolyExplosion_96x96_58: 491398572
+      HolyExplosion_96x96_59: -734980590
+      HolyExplosion_96x96_6: 1011192151
+      HolyExplosion_96x96_60: 192010368
+      HolyExplosion_96x96_61: -986332921
+      HolyExplosion_96x96_62: 670881878
+      HolyExplosion_96x96_63: -140031827
+      HolyExplosion_96x96_64: -1617559126
+      HolyExplosion_96x96_65: -1002338117
+      HolyExplosion_96x96_66: -1202336504
+      HolyExplosion_96x96_67: -111596841
+      HolyExplosion_96x96_68: -131733756
+      HolyExplosion_96x96_69: -896327802
+      HolyExplosion_96x96_7: -545276467
+      HolyExplosion_96x96_70: 1346000579
+      HolyExplosion_96x96_71: 420139503
+      HolyExplosion_96x96_72: 1443958503
+      HolyExplosion_96x96_73: 805496329
+      HolyExplosion_96x96_74: -1142535321
+      HolyExplosion_96x96_75: 1892063655
+      HolyExplosion_96x96_76: 1984755636
+      HolyExplosion_96x96_77: 1315925992
+      HolyExplosion_96x96_78: 1250049732
+      HolyExplosion_96x96_79: -281431308
+      HolyExplosion_96x96_8: -559280407
+      HolyExplosion_96x96_80: 993610862
+      HolyExplosion_96x96_81: -2113292410
+      HolyExplosion_96x96_82: -166433974
+      HolyExplosion_96x96_83: -1314421060
+      HolyExplosion_96x96_84: -1872563802
+      HolyExplosion_96x96_85: 519374208
+      HolyExplosion_96x96_86: 631889039
+      HolyExplosion_96x96_87: 31883920
+      HolyExplosion_96x96_88: 361333485
+      HolyExplosion_96x96_89: -210195639
+      HolyExplosion_96x96_9: 1166864737
+      HolyExplosion_96x96_90: 631334341
+      HolyExplosion_96x96_91: 917845610
+      HolyExplosion_96x96_92: -594022426
+      HolyExplosion_96x96_93: -504486035
+      HolyExplosion_96x96_94: -38625596
+      HolyExplosion_96x96_95: 467541575
+      HolyExplosion_96x96_96: -1248681535
+      HolyExplosion_96x96_97: 1383914138
+      HolyExplosion_96x96_98: -227833554
+      HolyExplosion_96x96_99: -961015367
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

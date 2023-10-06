@@ -10,7 +10,11 @@ public class Pacman : MonoBehaviour
     public SpriteRenderer spriteRenderer { get; private set; }
     public new Collider2D collider { get; private set; }
     public Movement movement { get; private set; }
-    public AnimatedSprite Skill;
+    public AnimatedSprite skill_1;
+    public AnimatedSprite skill_2;
+    public AnimatedSprite skill_3;
+
+    public float speed = 1f;
 
     private void Awake()
     {
@@ -21,10 +25,10 @@ public class Pacman : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartCoroutine(ActivateSkill());
-        }
+        // if (Input.GetKeyDown(KeyCode.Space))
+        // {
+        //     RandomActivateSkill();
+        // }
         // Set the new direction based on the current input
         if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) {
             movement.SetDirection(Vector2.up);
@@ -69,22 +73,79 @@ public class Pacman : MonoBehaviour
     public void Skill_1() {
         enabled = true;
         spriteRenderer.enabled = true;
-        Skill.GetComponent<Collider2D>().enabled = true;
+        skill_1.GetComponent<Collider2D>().enabled = true;
         movement.enabled = false;
-        Skill.enabled = true;
-        Skill.spriteRenderer.enabled = true;
+        skill_1.enabled = true;
+        skill_1.spriteRenderer.enabled = true;
     }
-    public IEnumerator ActivateSkill() {
-    Skill_1(); // Gọi hàm Skill_1()
+    public void Skill_2() {
+        enabled = true;
+        spriteRenderer.enabled = true;
+        skill_2.GetComponent<Collider2D>().enabled = true;
+        movement.enabled = false;
+        skill_2.enabled = true;
+        skill_2.spriteRenderer.enabled = true;
+    }
+    public void Skill_3() {
+        enabled = true;
+        spriteRenderer.enabled = true;
+        skill_3.GetComponent<Collider2D>().enabled = true;
+        movement.enabled = false;
+        skill_3.enabled = true;
+        skill_3.spriteRenderer.enabled = true;
+    }
+    public IEnumerator ActivateSkill_1() {
+        Skill_1(); // Gọi hàm Skill_1()
 
-    yield return new WaitForSeconds(1f); // Đợi 1 giây
+        yield return new WaitForSeconds(speed); // Đợi 1 giây
 
-    // Tắt các thành phần đã được kích hoạt trong hàm Skill_1()
-    spriteRenderer.enabled = true;
-    Skill.GetComponent<Collider2D>().enabled = false;
-    movement.enabled = true;
-    Skill.enabled = false;
-    Skill.spriteRenderer.enabled = false;
+        // Tắt các thành phần đã được kích hoạt trong hàm Skill_1()
+        spriteRenderer.enabled = true;
+        skill_1.GetComponent<Collider2D>().enabled = false;
+        movement.enabled = true;
+        skill_1.enabled = false;
+        skill_1.spriteRenderer.enabled = false;
+    }
+    public IEnumerator ActivateSkill_2() {
+        Skill_2(); // Gọi hàm Skill_1()
+
+        yield return new WaitForSeconds(speed); // Đợi 1 giây
+
+        // Tắt các thành phần đã được kích hoạt trong hàm Skill_1()
+        spriteRenderer.enabled = true;
+        skill_2.GetComponent<Collider2D>().enabled = false;
+        movement.enabled = true;
+        skill_2.enabled = false;
+        skill_2.spriteRenderer.enabled = false;
+    }
+    public IEnumerator ActivateSkill_3() {
+        Skill_3(); // Gọi hàm Skill_1()
+
+        yield return new WaitForSeconds(speed); // Đợi 1 giây
+
+        // Tắt các thành phần đã được kích hoạt trong hàm Skill_1()
+        spriteRenderer.enabled = true;
+        skill_3.GetComponent<Collider2D>().enabled = false;
+        movement.enabled = true;
+        skill_3.enabled = false;
+        skill_3.spriteRenderer.enabled = false;
+    }
+    public void RandomActivateSkill()
+    {
+        int randomIndex = Random.Range(1, 4); // Chọn một số ngẫu nhiên từ 1 đến 3
+
+        switch (randomIndex)
+        {
+            case 1:
+                StartCoroutine(ActivateSkill_1());
+                break;
+            case 2:
+                StartCoroutine(ActivateSkill_2());
+                break;
+            case 3:
+                StartCoroutine(ActivateSkill_3());
+                break;
+        }
     }
     
 }

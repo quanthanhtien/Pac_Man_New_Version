@@ -10,13 +10,13 @@ public class GameManager : MonoBehaviour
     public Text gameOverText;
     public Text scoreText;
     public Text livesText;
-
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
     public int lives { get; private set; }
 
     private void Start()
     {
+        pacman = FindObjectOfType<Pacman>();
         NewGame();
     }
 
@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
         if (lives <= 0 && Input.anyKeyDown) {
             NewGame();
         }
+        if (Input.GetKeyDown(KeyCode.Space)) {
+        pacman.RandomActivateSkill();
+    }
     }
 
     private void NewGame()
