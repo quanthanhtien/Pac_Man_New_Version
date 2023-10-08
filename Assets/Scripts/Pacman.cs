@@ -130,22 +130,17 @@ public class Pacman : MonoBehaviour
         skill_3.enabled = false;
         skill_3.spriteRenderer.enabled = false;
     }
-    public void RandomActivateSkill()
+    public void ActivateSkill1()
     {
-        int randomIndex = Random.Range(1, 4); // Chọn một số ngẫu nhiên từ 1 đến 3
-
-        switch (randomIndex)
-        {
-            case 1:
-                StartCoroutine(ActivateSkill_1());
-                break;
-            case 2:
-                StartCoroutine(ActivateSkill_2());
-                break;
-            case 3:
-                StartCoroutine(ActivateSkill_3());
-                break;
-        }
+        StartCoroutine(ActivateSkill_1());     
+    }
+    public void ActivateSkill2()
+    {
+        StartCoroutine(ActivateSkill_2());     
+    }
+    public void ActivateSkill3()
+    {
+        StartCoroutine(ActivateSkill_3());     
     }
     
 }

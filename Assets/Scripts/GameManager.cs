@@ -6,10 +6,19 @@ public class GameManager : MonoBehaviour
     public Ghost[] ghosts;
     public Pacman pacman;
     public Transform pellets;
-
     public Text gameOverText;
     public Text scoreText;
     public Text livesText;
+    public AnimatedSprite skill_1;
+    public AnimatedSprite skill_2;
+    public AnimatedSprite skill_3;
+
+
+    private bool canUseSkill_1 = true;
+    private bool canUseSkill_2 = true;
+    private bool canUseSkill_3 = true;
+
+
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
     public int lives { get; private set; }
@@ -18,6 +27,12 @@ public class GameManager : MonoBehaviour
     {
         pacman = FindObjectOfType<Pacman>();
         NewGame();
+        skill_1.enabled = true;
+        skill_1.spriteRenderer.enabled = true;
+        skill_2.enabled = true;
+        skill_2.spriteRenderer.enabled = true;
+        skill_3.enabled = true;
+        skill_3.spriteRenderer.enabled = true;
     }
 
     private void Update()
@@ -25,9 +40,46 @@ public class GameManager : MonoBehaviour
         if (lives <= 0 && Input.anyKeyDown) {
             NewGame();
         }
-        if (Input.GetKeyDown(KeyCode.Space)) {
-        pacman.RandomActivateSkill();
+        if (Input.GetKeyDown(KeyCode.Q) && canUseSkill_1) {
+            pacman.ActivateSkill1();
+            canUseSkill_1 = false;
+            skill_1.enabled = false;
+            skill_1.spriteRenderer.enabled = false;
+            Invoke(nameof(ResetSkillCooldown1), 10f);
+        }
+        if (Input.GetKeyDown(KeyCode.E) && canUseSkill_2) {
+            pacman.ActivateSkill2();
+            canUseSkill_2 = false;
+            skill_2.enabled = false;
+            skill_2.spriteRenderer.enabled = false;
+            Invoke(nameof(ResetSkillCooldown2), 10f);
+        }
+        if (Input.GetKeyDown(KeyCode.R) && canUseSkill_3) {
+            pacman.ActivateSkill3();
+            canUseSkill_3 = false;
+            skill_3.enabled = false;
+            skill_3.spriteRenderer.enabled = false;
+            Invoke(nameof(ResetSkillCooldown3), 10f);
+        }
     }
+
+    private void ResetSkillCooldown1()
+    {
+        canUseSkill_1 = true;
+        skill_1.enabled = true;
+        skill_1.spriteRenderer.enabled = true;
+    }
+    private void ResetSkillCooldown2()
+    {
+        canUseSkill_2 = true;
+        skill_2.enabled = true;
+        skill_2.spriteRenderer.enabled = true;
+    }
+    private void ResetSkillCooldown3()
+    {
+        canUseSkill_3 = true;
+        skill_3.enabled = true;
+        skill_3.spriteRenderer.enabled = true;
     }
 
     private void NewGame()
