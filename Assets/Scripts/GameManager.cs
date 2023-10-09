@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -44,23 +45,77 @@ public class GameManager : MonoBehaviour
             pacman.ActivateSkill1();
             canUseSkill_1 = false;
             skill_1.enabled = false;
-            skill_1.spriteRenderer.enabled = false;
+            StartCoroutine(BlinkSkill_1()); // Bắt đầu coroutine nhấp nháy
             Invoke(nameof(ResetSkillCooldown1), 10f);
         }
         if (Input.GetKeyDown(KeyCode.E) && canUseSkill_2) {
             pacman.ActivateSkill2();
             canUseSkill_2 = false;
             skill_2.enabled = false;
-            skill_2.spriteRenderer.enabled = false;
+            StartCoroutine(BlinkSkill_2()); // Bắt đầu coroutine nhấp nháy
             Invoke(nameof(ResetSkillCooldown2), 10f);
         }
         if (Input.GetKeyDown(KeyCode.R) && canUseSkill_3) {
             pacman.ActivateSkill3();
             canUseSkill_3 = false;
             skill_3.enabled = false;
-            skill_3.spriteRenderer.enabled = false;
+            StartCoroutine(BlinkSkill_3()); // Bắt đầu coroutine nhấp nháy
             Invoke(nameof(ResetSkillCooldown3), 10f);
         }
+    }
+    private IEnumerator BlinkSkill_1() {
+        float duration = 10f; // Thời gian invoke
+        float blinkInterval = 0.5f; // Khoảng thời gian nhấp nháy
+
+        float elapsedTime = 0f;
+        bool isVisible = true;
+
+        while (elapsedTime < duration)
+        {
+            skill_1.spriteRenderer.enabled = isVisible;
+            yield return new WaitForSeconds(blinkInterval);
+            elapsedTime += blinkInterval;
+            isVisible = !isVisible;
+        }
+
+        skill_1.spriteRenderer.enabled = true; // Đảm bảo sprite hiển thị khi kết thúc invoke
+        canUseSkill_1 = true; // Cho phép sử dụng kỹ năng tiếp theo
+    }
+    private IEnumerator BlinkSkill_2() {
+        float duration = 10f; // Thời gian invoke
+        float blinkInterval = 0.5f; // Khoảng thời gian nhấp nháy
+
+        float elapsedTime = 0f;
+        bool isVisible = true;
+
+        while (elapsedTime < duration)
+        {
+            skill_2.spriteRenderer.enabled = isVisible;
+            yield return new WaitForSeconds(blinkInterval);
+            elapsedTime += blinkInterval;
+            isVisible = !isVisible;
+        }
+
+        skill_2.spriteRenderer.enabled = true; // Đảm bảo sprite hiển thị khi kết thúc invoke
+        canUseSkill_2 = true; // Cho phép sử dụng kỹ năng tiếp theo
+    }
+    private IEnumerator BlinkSkill_3() {
+        float duration = 10f; // Thời gian invoke
+        float blinkInterval = 0.5f; // Khoảng thời gian nhấp nháy
+
+        float elapsedTime = 0f;
+        bool isVisible = true;
+
+        while (elapsedTime < duration)
+        {
+            skill_3.spriteRenderer.enabled = isVisible;
+            yield return new WaitForSeconds(blinkInterval);
+            elapsedTime += blinkInterval;
+            isVisible = !isVisible;
+        }
+
+        skill_3.spriteRenderer.enabled = true; // Đảm bảo sprite hiển thị khi kết thúc invoke
+        canUseSkill_3 = true; // Cho phép sử dụng kỹ năng tiếp theo
     }
 
     private void ResetSkillCooldown1()
