@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     public int ghostMultiplier { get; private set; } = 1;
     public int score { get; private set; }
     public int lives { get; private set; }
+    public GameObject portal;
 
     private void Start()
     {
@@ -61,6 +62,9 @@ public class GameManager : MonoBehaviour
             skill_3.enabled = false;
             StartCoroutine(BlinkSkill_3()); // Bắt đầu coroutine nhấp nháy
             Invoke(nameof(ResetSkillCooldown3), 10f);
+        }
+        if (score >=1000) {
+            portal.SetActive(true);
         }
     }
     private IEnumerator BlinkSkill_1() {

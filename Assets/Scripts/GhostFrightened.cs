@@ -37,7 +37,7 @@ public class GhostFrightened : GhostBehavior
         ghost.SetPosition(ghost.home.inside.position);
         ghost.home.Enable(duration);
 
-        body.enabled = false;
+        body.enabled = true;
         eyes.enabled = true;
         blue.enabled = false;
         white.enabled = false;
