@@ -19,9 +19,9 @@ public class GameManager : MonoBehaviour
     private bool canUseSkill_2 = true;
     private bool canUseSkill_3 = true;
 
-
+    // public ScoreManager scoreManager;
     public int ghostMultiplier { get; private set; } = 1;
-    public int score { get; private set; }
+    public int score { get;  set; }
     public int lives { get; private set; }
     public GameObject portal;
 
@@ -35,6 +35,12 @@ public class GameManager : MonoBehaviour
         skill_2.spriteRenderer.enabled = true;
         skill_3.enabled = true;
         skill_3.spriteRenderer.enabled = true;
+        int lives = PlayerPrefs.GetInt("Lives", 3);
+        this.lives = lives;
+        livesText.text = "x" + lives.ToString();
+        int score = PlayerPrefs.GetInt("Score", 0);
+        this.score = score;
+        scoreText.text = score.ToString().PadLeft(2, '0');     
     }
 
     private void Update()
@@ -143,8 +149,6 @@ public class GameManager : MonoBehaviour
 
     private void NewGame()
     {
-        SetScore(0);
-        SetLives(3);
         NewRound();
     }
 
@@ -179,16 +183,18 @@ public class GameManager : MonoBehaviour
         pacman.gameObject.SetActive(false);
     }
 
-    private void SetLives(int lives)
+    private void SetLives(int newlives)
     {
-        this.lives = lives;
+        this.lives = newlives;
+        PlayerPrefs.SetInt("Lives", newlives);
         livesText.text = "x" + lives.ToString();
     }
 
-    private void SetScore(int score)
+    private void SetScore(int newscore)
     {
-        this.score = score;
-        scoreText.text = score.ToString().PadLeft(2, '0');
+        this.score = newscore;
+        PlayerPrefs.SetInt("Score", newscore);
+        scoreText.text = newscore.ToString().PadLeft(2, '0');
     }
 
     public void PacmanEaten()
@@ -251,6 +257,10 @@ public class GameManager : MonoBehaviour
     private void ResetGhostMultiplier()
     {
         ghostMultiplier = 1;
+    }
+     private void OnApplicationQuit()
+    {
+        PlayerPrefs.DeleteAll();
     }
 
 }
