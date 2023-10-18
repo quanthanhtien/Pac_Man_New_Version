@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(BlinkSkill_3()); // Bắt đầu coroutine nhấp nháy
             Invoke(nameof(ResetSkillCooldown3), 10f);
         }
-        if (score >=1000) {
+        if (score >= 2000) {
             portal.SetActive(true);
         }
     }
