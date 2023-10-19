@@ -1,15 +1,18 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class GameManager : MonoBehaviour
 {
     public Ghost[] ghosts;
     public Pacman pacman;
     public Transform pellets;
-    public Text gameOverText;
+
     public Text scoreText;
     public Text livesText;
+    public Text gameOverText;
     public AnimatedSprite skill_1;
     public AnimatedSprite skill_2;
     public AnimatedSprite skill_3;
@@ -24,6 +27,8 @@ public class GameManager : MonoBehaviour
     public int score { get;  set; }
     public int lives { get; private set; }
     public GameObject portal;
+    public GameObject portal_1;
+
 
     private void Start()
     {
@@ -71,6 +76,9 @@ public class GameManager : MonoBehaviour
         }
         if (score >= 2000) {
             portal.SetActive(true);
+        }
+        if (score >= 4000) {
+            portal_1.SetActive(true);
         }
     }
     private IEnumerator BlinkSkill_1() {
@@ -154,7 +162,6 @@ public class GameManager : MonoBehaviour
 
     private void NewRound()
     {
-        gameOverText.enabled = false;
 
         foreach (Transform pellet in pellets) {
             pellet.gameObject.SetActive(true);
@@ -174,15 +181,28 @@ public class GameManager : MonoBehaviour
 
     private void GameOver()
     {
-        gameOverText.enabled = true;
-
-        for (int i = 0; i < ghosts.Length; i++) {
-            ghosts[i].gameObject.SetActive(false);
-        }
-
-        pacman.gameObject.SetActive(false);
+        StartCoroutine(BlinkGameOverText()); // Bắt đầu coroutine nhấp nháy và delay
     }
 
+    private IEnumerator BlinkGameOverText() 
+    {
+        float duration = 4f; // Thời gian delay trước khi nhấp nháy
+        float blinkInterval = 0.5f; // Khoảng thời gian nhấp nháy
+
+        float elapsedTime = 0f;
+        bool isVisible = true;
+
+        while (elapsedTime < duration)
+        {
+            gameOverText.enabled = isVisible;
+            yield return new WaitForSeconds(blinkInterval);
+            elapsedTime += blinkInterval;
+            isVisible = !isVisible;
+        }
+
+        // gameOverText.enabled = true; // Đảm bảo hiển thị gameOverText khi kết thúc delay
+        SceneManager.LoadScene("finish"); // Chuyển sang màn hình khác
+    }
     private void SetLives(int newlives)
     {
         this.lives = newlives;
@@ -195,6 +215,9 @@ public class GameManager : MonoBehaviour
         this.score = newscore;
         PlayerPrefs.SetInt("Score", newscore);
         scoreText.text = newscore.ToString().PadLeft(2, '0');
+    }
+    public int  GetScore() {
+        return score;
     }
 
     public void PacmanEaten()
@@ -258,7 +281,7 @@ public class GameManager : MonoBehaviour
     {
         ghostMultiplier = 1;
     }
-     private void OnApplicationQuit()
+    private void OnApplicationQuit()
     {
         PlayerPrefs.DeleteAll();
     }
