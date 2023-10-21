@@ -14567,13 +14567,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 631f482cdefd85f469e2bfd78904afd6, type: 3}
-  - {fileID: 21300000, guid: 8fc13bba411d5e748b8f9b7ddb86de53, type: 3}
-  - {fileID: 21300000, guid: 1d26448977c3c644fa838e3a2d54750c, type: 3}
-  - {fileID: 21300000, guid: ab5ee8e31d4cb694993540c1842c8c2e, type: 3}
-  - {fileID: 21300000, guid: ad7b4066664c2654cb49b3046cfa22f0, type: 3}
-  - {fileID: 21300000, guid: 160decfbdeae6ef4b805298b1a2b21b5, type: 3}
-  - {fileID: 21300000, guid: e088a1154077919478b266ab8c287de3, type: 3}
+  - {fileID: -548359947, guid: fa7d432faf5c41f409788e58f88f88ce, type: 3}
+  - {fileID: 1071643711, guid: 16bf509011f265a44b39259a4030d81a, type: 3}
+  - {fileID: 518962911, guid: 70f3bd7c223b6b947b3b4f2360429ad3, type: 3}
+  - {fileID: -2033645045, guid: 7144194cd62a66e46a666789e7466a95, type: 3}
   animationTime: 0.25
   loop: 1
 --- !u!212 &379353567
@@ -14617,7 +14614,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 631f482cdefd85f469e2bfd78904afd6, type: 3}
+  m_Sprite: {fileID: -548359947, guid: fa7d432faf5c41f409788e58f88f88ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -14637,7 +14634,7 @@ Transform:
   m_GameObject: {fileID: 379353565}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.13, y: 5.34, z: 0.0241955}
-  m_LocalScale: {x: 3.381814, y: 6.797477, z: 1}
+  m_LocalScale: {x: 2.2587347, y: 2.056237, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -14656,8 +14653,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02880764, y: 0.11228474}
-  m_Size: {x: 1.34703, y: 1.304381}
+  m_Offset: {x: -0.09949313, y: 0.11228476}
+  m_Size: {x: 5.25832, y: 5.776158}
   m_Direction: 0
 --- !u!114 &379353570
 MonoBehaviour:
@@ -15884,7 +15881,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.21039516, g: 0.5660378, b: 0.5230742, a: 0}
+  m_BackGroundColor: {r: 0.2699359, g: 0.4245283, b: 0.28837958, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

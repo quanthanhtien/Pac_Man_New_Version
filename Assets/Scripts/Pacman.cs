@@ -42,7 +42,6 @@ public class Pacman : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
             movement.SetDirection(Vector2.right);
         }
-
         // Rotate pacman to face the movement direction
         float angle = Mathf.Atan2(movement.direction.y, movement.direction.x);
         transform.rotation = Quaternion.AngleAxis(angle * Mathf.Rad2Deg, Vector3.forward);
@@ -96,7 +95,7 @@ public class Pacman : MonoBehaviour
     }
     public IEnumerator ActivateSkill_1() {
         Skill_1(); // Gọi hàm Skill_1()
-
+    
         yield return new WaitForSeconds(speed); // Đợi 1 giây
 
         // Tắt các thành phần đã được kích hoạt trong hàm Skill_1()
@@ -142,5 +141,4 @@ public class Pacman : MonoBehaviour
     {
         StartCoroutine(ActivateSkill_3());     
     }
-    
 }
