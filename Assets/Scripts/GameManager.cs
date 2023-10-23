@@ -17,6 +17,10 @@ public class GameManager : MonoBehaviour
     public AnimatedSprite skill_2;
     public AnimatedSprite skill_3;
 
+    public AudioSource aus;
+    public AudioClip pellet_eaten;
+    public AudioClip pacman_death;
+    public AudioClip ghost_death;
 
     private bool canUseSkill_1 = true;
     private bool canUseSkill_2 = true;
@@ -81,6 +85,18 @@ public class GameManager : MonoBehaviour
             portal_1.SetActive(true);
         }
     }
+
+    public void  sound_pellet() {
+        if (!aus.isPlaying) {
+        aus.PlayOneShot(pellet_eaten);
+        aus.SetScheduledEndTime(Time.time + 0.001f);
+    }
+    }
+    public void  sound_ghost_death() {
+        aus.PlayOneShot(ghost_death);
+        aus.SetScheduledEndTime(Time.time + 0.001f);
+    }
+
     private IEnumerator BlinkSkill_1() {
         float duration = 10f; // Thời gian invoke
         float blinkInterval = 0.5f; // Khoảng thời gian nhấp nháy
@@ -223,7 +239,8 @@ public class GameManager : MonoBehaviour
     public void PacmanEaten()
     {
         pacman.DeathSequence();
-
+        aus.PlayOneShot(pacman_death);
+        aus.SetScheduledEndTime(Time.time + 0.001f);
         SetLives(lives - 1);
 
         if (lives > 0) {
@@ -244,9 +261,9 @@ public class GameManager : MonoBehaviour
     public void PelletEaten(Pellet pellet)
     {
         pellet.gameObject.SetActive(false);
-
+        
         SetScore(score + pellet.points);
-
+        
         if (!HasRemainingPellets())
         {
             pacman.gameObject.SetActive(false);

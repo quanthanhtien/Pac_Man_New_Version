@@ -4,10 +4,10 @@ using UnityEngine;
 public class Pellet : MonoBehaviour
 {
     public int points = 10;
-
     protected virtual void Eat()
     {
         FindObjectOfType<GameManager>().PelletEaten(this);
+        FindObjectOfType<GameManager>().sound_pellet();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
