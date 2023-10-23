@@ -21,6 +21,8 @@ public class GameManager : MonoBehaviour
     public AudioClip pellet_eaten;
     public AudioClip pacman_death;
     public AudioClip ghost_death;
+    public AudioClip change_scene;
+
 
     private bool canUseSkill_1 = true;
     private bool canUseSkill_2 = true;
@@ -78,10 +80,10 @@ public class GameManager : MonoBehaviour
             StartCoroutine(BlinkSkill_3()); // Bắt đầu coroutine nhấp nháy
             Invoke(nameof(ResetSkillCooldown3), 10f);
         }
-        if (score >= 1000) {
+        if (score >= 1500) {
             portal.SetActive(true);
         }
-        if (score >= 2500) {
+        if (score >= 4000) {
             portal_1.SetActive(true);
         }
     }
@@ -94,6 +96,10 @@ public class GameManager : MonoBehaviour
     }
     public void  sound_ghost_death() {
         aus.PlayOneShot(ghost_death);
+        aus.SetScheduledEndTime(Time.time + 0.001f);
+    }
+    public void  sound_change_scene() {
+        aus.PlayOneShot(change_scene);
         aus.SetScheduledEndTime(Time.time + 0.001f);
     }
 

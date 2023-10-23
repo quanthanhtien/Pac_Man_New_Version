@@ -23,6 +23,7 @@ public class Portal : MonoBehaviour
         PlayerPrefs.SetInt("Score", score);
 
         screne.SetActive(true);
+        FindObjectOfType<GameManager>().sound_change_scene();
         yield return new WaitForSeconds(1f); // Tạo delay 2 giây
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }

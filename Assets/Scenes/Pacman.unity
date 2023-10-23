@@ -1332,6 +1332,7 @@ MonoBehaviour:
   pellet_eaten: {fileID: 8300000, guid: ec6275711ff07b34c83cfb6db9e65365, type: 3}
   pacman_death: {fileID: 8300000, guid: b90d15305ad2c2b4286fb67fc823a222, type: 3}
   ghost_death: {fileID: 8300000, guid: e74c2f388edaedd4daed9ca21e6385e2, type: 3}
+  change_scene: {fileID: 8300000, guid: 2aec812ab91316946b2841c550a398f4, type: 3}
   portal: {fileID: 1705569885}
   portal_1: {fileID: 764889613}
 --- !u!4 &469897152
