@@ -20,4 +20,5 @@ public class Main_Menu : MonoBehaviour
         Application.Quit();
         Debug.Log("quit game");        
     }
+    
 }

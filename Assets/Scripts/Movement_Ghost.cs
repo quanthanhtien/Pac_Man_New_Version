@@ -15,7 +15,7 @@ public class Movement_Ghost : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(7f); // Đợi 5 giây
+            yield return new WaitForSeconds(4f); // Đợi 5 giây
 
             movementScript.speed += 1f; // Tăng speed lên 1
 
